@@ -9,10 +9,13 @@ brew cask install cakebrew
 #OhMyZsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-brew install wget
-brew install tree
 brew install m-cli
 brew install nmap
+brew install tree
+brew install wget
+
+#What a show-off
+brew install screenfetch
 
 #Git & Git config
 brew install git
@@ -32,6 +35,7 @@ echo "colorscheme elflord" >> ~/.vimrc
 brew install fortune
 brew install cowsay
 echo "fortune | cowsay -f vader" >> ~/.zshrc
+brew install sl
 
 #Go
 brew install go
