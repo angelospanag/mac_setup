@@ -33,6 +33,7 @@ brew install vim --with-override-system-vi
 echo "syntax on" >> ~/.vimrc
 echo "set nu" >> ~/.vimrc
 echo "colorscheme elflord" >> ~/.vimrc
+echo "set backspace=indent,eol,start" >> ~/.vimrc
 
 #I have horrible humour
 brew install fortune
