@@ -9,6 +9,9 @@ brew cask install cakebrew
 #OhMyZsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+#Remove annoying console login message
+touch ~/.hushlogin
+
 brew install m-cli
 brew install nmap
 brew install tree
