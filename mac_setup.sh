@@ -10,6 +10,9 @@ brew cask install cakebrew
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 brew install wget
+brew install tree
+brew install m-cli
+brew install nmap
 
 #Git & Git config
 brew install git
