@@ -16,6 +16,7 @@ brew install git
 git config --global credential.helper osxkeychain
 git config --global user.email "angelospanag@gmail.com"
 git config --global user.name "Angelos Panagiotopoulos"
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 git config --global commit.gpgsign true
 
 #Vim & Vim config
