@@ -12,6 +12,22 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 #Remove annoying console login message
 touch ~/.hushlogin
 
+#Generate new SSH keys
+eval "$(ssh-agent -s)"
+cd ~/ && mkdir .ssh
+ssh-keygen -f ~/.ssh/id_rsa -t rsa -b 4096 -C "angelospanag@gmail.com" -N ''
+
+#SSH config
+touch ~/.ssh/config
+echo "Host *" << ~/.ssh/config
+echo " AddKeysToAgent yes" << ~/.ssh/config
+echo " UseKeychain yes" << ~/.ssh/config
+echo " IdentityFile ~/.ssh/id_rsa" << ~/.ssh/config
+
+# Add the new SSH keys to the keychain
+chmod 400 ~/.ssh/id_rsa
+ssh-add -K ~/.ssh/id_rsa
+
 brew install m-cli
 brew install nmap
 brew install tree
