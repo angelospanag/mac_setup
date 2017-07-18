@@ -28,6 +28,7 @@ echo " IdentityFile ~/.ssh/id_rsa" >> ~/.ssh/config
 chmod 400 ~/.ssh/id_rsa
 ssh-add -K ~/.ssh/id_rsa
 
+brew install jq
 brew install m-cli
 brew install nmap
 brew install tree
