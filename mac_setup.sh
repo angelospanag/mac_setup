@@ -1,5 +1,3 @@
-#!bin/bash
-
 #Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -61,7 +59,10 @@ brew install sl
 #Go
 brew install go
 brew install glide
-brew install delve
+brew install go-delve/delve/delve
+
+#Python
+brew install python
 
 #Brew cask apps
 brew tap caskroom/fonts
