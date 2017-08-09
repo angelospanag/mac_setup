@@ -68,6 +68,7 @@ echo "export GOROOT=/usr/local/opt/go/libexec" >> ~/.zshrc
 #Python
 brew install python
 brew install python3
+echo "WORKON_HOME=~/Envs" >> ~/.zshrc
 
 #AWS
 brew install awscli
