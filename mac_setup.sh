@@ -62,7 +62,7 @@ brew install glide
 brew install go-delve/delve/delve
 cd $HOME
 mkdir go
-echo "export GOPATH=$HOME/golang" >> ~/.zshrc
+echo "export GOPATH=$HOME/go" >> ~/.zshrc
 echo "export GOROOT=/usr/local/opt/go/libexec" >> ~/.zshrc
 
 #Python
