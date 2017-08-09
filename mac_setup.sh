@@ -60,9 +60,20 @@ brew install sl
 brew install go
 brew install glide
 brew install go-delve/delve/delve
+cd $HOME
+mkdir go
+echo "export GOPATH=$HOME/golang" >> ~/.zshrc
+echo "export GOROOT=/usr/local/opt/go/libexec" >> ~/.zshrc
 
 #Python
 brew install python
+brew install python3
+
+#AWS
+brew install awscli
+
+#ApacheBench
+brew install homebrew/apache/ab
 
 #Brew cask apps
 brew tap caskroom/fonts
