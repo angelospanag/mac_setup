@@ -59,11 +59,12 @@ brew install sl
 #Go
 brew install go
 brew install glide
-brew install go-delve/delve/delve
 cd $HOME
 mkdir go
 echo "export GOPATH=$HOME/go" >> ~/.zshrc
 echo "export GOROOT=/usr/local/opt/go/libexec" >> ~/.zshrc
+go get -u github.com/derekparker/delve/cmd/dlv
+go get -u golang.org/x/tools/cmd/goimports
 
 #Python
 brew install python
