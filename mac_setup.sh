@@ -78,6 +78,7 @@ echo "WORKON_HOME=~/Envs" >> ~/.zshrc
 brew install homebrew/php/php71
 brew install homebrew/php/composer
 brew install homebrew/php/php-cs-fixer
+brew install homebrew/php/psysh
 echo "export PATH=\"\$(brew --prefix homebrew/php/php71)/bin:\$PATH\"" >> ~/.zshrc
 
 #AWS
