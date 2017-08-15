@@ -63,7 +63,7 @@ brew install go
 brew install glide
 cd $HOME
 mkdir go
-echo "export GOPATH=$HOME/go" >> ~/.zshrc
+echo "export GOPATH=\$HOME/go" >> ~/.zshrc
 echo "export GOROOT=/usr/local/opt/go/libexec" >> ~/.zshrc
 go get -u github.com/derekparker/delve/cmd/dlv
 go get -u golang.org/x/tools/cmd/goimports
@@ -72,6 +72,13 @@ go get -u golang.org/x/tools/cmd/goimports
 brew install python
 brew install python3
 echo "WORKON_HOME=~/Envs" >> ~/.zshrc
+
+#PHP
+#PHP 7.1
+brew install homebrew/php/php71
+brew install homebrew/php/composer
+brew install homebrew/php/php-cs-fixer
+echo "export PATH=\"\$(brew --prefix homebrew/php/php71)/bin:\$PATH\"" >> ~/.zshrc
 
 #AWS
 brew install awscli
