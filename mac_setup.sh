@@ -55,7 +55,8 @@ echo "set backspace=indent,eol,start" >> ~/.vimrc
 #I have horrible humour
 brew install fortune
 brew install cowsay
-echo "fortune | cowsay -f vader" >> ~/.zshrc
+brew install lolcat
+echo "fortune | cowsay -f dragon | lolcat" >> ~/.zshrc
 brew install sl
 
 #Go
@@ -95,7 +96,4 @@ brew cask install google-chrome
 brew cask install iterm2
 brew cask install keepassx
 brew cask install spectacle
-#brew cask install slack
 #brew cask install docker
-#brew cask install vagrant
-#brew cask install virtualbox
