@@ -82,6 +82,10 @@ brew install homebrew/php/composer
 brew install homebrew/php/php-cs-fixer
 brew install homebrew/php/psysh
 
+#Node.js
+brew install node
+brew install yarn
+
 #AWS
 brew install awscli
 
