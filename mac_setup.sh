@@ -31,6 +31,7 @@ ssh-add -K ~/.ssh/id_rsa
 brew install jq
 brew install m-cli
 brew install nmap
+brew install pwgen
 brew install tree
 brew install wget
 
