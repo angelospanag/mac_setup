@@ -100,5 +100,6 @@ brew cask install font-fira-code
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install keepassx
+brew cask install postman
 brew cask install spectacle
-#brew cask install docker
+brew cask install wire
