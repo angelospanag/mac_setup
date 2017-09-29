@@ -62,6 +62,7 @@ brew install sl
 
 #Go
 brew install go
+brew install dep
 brew install glide
 cd $HOME
 mkdir go
