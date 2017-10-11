@@ -96,7 +96,7 @@ brew install homebrew/apache/ab
 
 # Brew cask apps
 brew cask install atom
-brew cask install caskroom/fonts/font-fira-code
+brew cask install fonts/font-fira-code
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install keepassx
