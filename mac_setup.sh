@@ -106,6 +106,7 @@ brew cask install wire
 
 # Visual Studio Code and extensions
 brew cask install visual-studio-code
+code --install-extension HookyQR.beautify
 code --install-extension PeterJausovec.vscode-docker
 code --install-extension bungcip.better-toml
 code --install-extension donjayamanne.python
