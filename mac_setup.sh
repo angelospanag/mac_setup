@@ -104,6 +104,10 @@ brew cask install postman
 brew cask install spectacle
 brew cask install wire
 
+# Docker and Kitematic
+brew cask install docker
+brew cask install kitematic
+
 # Visual Studio Code and extensions
 brew cask install visual-studio-code
 code --install-extension HookyQR.beautify
