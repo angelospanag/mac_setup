@@ -119,13 +119,13 @@ code --install-extension robertohuertasm.vscode-icons
 code --install-extension stevejpurves.cucumber
 
 # Visual Studio Code user settings
-echo "{" >> $HOME/Library/Application Support/Code/User/settings.json
-echo "  \"workbench.iconTheme\": \"vscode-icons\"," >> $HOME/Library/Application Support/Code/User/settings.json
-echo "  \"editor.fontFamily\": \"Fira Code\"," >> $HOME/Library/Application Support/Code/User/settings.json
-echo "  \"editor.fontSize\": 14," >> $HOME/Library/Application Support/Code/User/settings.json
-echo "  \"editor.fontLigatures\": true," >> $HOME/Library/Application Support/Code/User/settings.json
-echo "  \"editor.formatOnSave\": true," >> $HOME/Library/Application Support/Code/User/settings.json
-echo "  \"go.formatTool\": \"goimports\"," >> $HOME/Library/Application Support/Code/User/settings.json
-echo "  \"terminal.integrated.fontSize\": 14," >> $HOME/Library/Application Support/Code/User/settings.json
-echo "  \"terminal.integrated.fontFamily\": \"Menlo, Monaco, \'Courier New\', monospace\"" >> $HOME/Library/Application Support/Code/User/settings.json
-echo "}" >> $HOME/Library/Application Support/Code/User/settings.json
+echo "{" >> $HOME/Library/Application\ Support/Code/User/settings.json
+echo "  \"workbench.iconTheme\": \"vscode-icons\"," >> $HOME/Library/Application\ Support/Code/User/settings.json
+echo "  \"editor.fontFamily\": \"Fira Code\"," >> $HOME/Library/Application\ Support/Code/User/settings.json
+echo "  \"editor.fontSize\": 14," >> $HOME/Library/Application\ Support/Code/User/settings.json
+echo "  \"editor.fontLigatures\": true," >> $HOME/Library/Application\ Support/Code/User/settings.json
+echo "  \"editor.formatOnSave\": true," >> $HOME/Library/Application\ Support/Code/User/settings.json
+echo "  \"go.formatTool\": \"goimports\"," >> $HOME/Library/Application\ Support/Code/User/settings.json
+echo "  \"terminal.integrated.fontSize\": 14," >> $HOME/Library/Application\ Support/Code/User/settings.json
+echo "  \"terminal.integrated.fontFamily\": \"Menlo, Monaco, \'Courier New\', monospace\"" >> $HOME/Library/Application\ Support/Code/User/settings.json
+echo "}" >> $HOME/Library/Application\ Support/Code/User/settings.json
