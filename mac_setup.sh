@@ -36,7 +36,7 @@ brew install tree
 brew install wget
 
 # What a show-off
-brew install screenfetch
+brew install neofetch
 
 # Git & Git config
 brew install git
