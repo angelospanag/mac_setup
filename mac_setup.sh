@@ -35,6 +35,10 @@ brew install pwgen
 brew install tree
 brew install wget
 
+# Need my music
+brew install ffmpeg
+brew install youtube-dl
+
 # What a show-off
 brew install neofetch
 
@@ -119,6 +123,7 @@ code --install-extension robertohuertasm.vscode-icons
 code --install-extension stevejpurves.cucumber
 
 # Visual Studio Code user settings
+rm $HOME/Library/Application\ Support/Code/User/settings.json
 echo "{" >> $HOME/Library/Application\ Support/Code/User/settings.json
 echo "  \"workbench.iconTheme\": \"vscode-icons\"," >> $HOME/Library/Application\ Support/Code/User/settings.json
 echo "  \"editor.fontFamily\": \"Fira Code\"," >> $HOME/Library/Application\ Support/Code/User/settings.json
