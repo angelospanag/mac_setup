@@ -79,6 +79,10 @@ go get -u golang.org/x/tools/cmd/goimports
 brew install python
 brew install python3
 echo "WORKON_HOME=\$HOME/Envs" >> ~/.zshrc
+sudo easy_install pip
+sudo pip install virtualenv
+sudo pip install virtualenvwrapper --ignore-installed six
+source /usr/local/bin/virtualenvwrapper.sh
 
 # PHP
 # PHP 7.1
@@ -114,17 +118,17 @@ brew cask install kitematic
 
 # Visual Studio Code and extensions
 brew cask install visual-studio-code
-code --install-extension HookyQR.beautify
 code --install-extension PeterJausovec.vscode-docker
 code --install-extension bungcip.better-toml
-code --install-extension donjayamanne.python
+code --install-extension eg2.vscode-npm-script
+code --install-extension emmanuelbeziat.vscode-great-icons
 code --install-extension lukehoban.Go
-code --install-extension robertohuertasm.vscode-icons
+code --install-extension ms-python.python
 code --install-extension stevejpurves.cucumber
 
 # Visual Studio Code user settings
 rm $HOME/Library/Application\ Support/Code/User/settings.json
-echo "{" >> $HOME/Library/Application\ Support/Code/User/settings.json
+echo "{" > $HOME/Library/Application\ Support/Code/User/settings.json
 echo "  \"workbench.iconTheme\": \"vscode-icons\"," >> $HOME/Library/Application\ Support/Code/User/settings.json
 echo "  \"editor.fontFamily\": \"Fira Code\"," >> $HOME/Library/Application\ Support/Code/User/settings.json
 echo "  \"editor.fontSize\": 14," >> $HOME/Library/Application\ Support/Code/User/settings.json
