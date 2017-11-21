@@ -78,11 +78,11 @@ go get -u golang.org/x/tools/cmd/goimports
 # Python
 brew install python
 brew install python3
-echo "WORKON_HOME=\$HOME/Envs" >> ~/.zshrc
 sudo easy_install pip
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper --ignore-installed six
-source /usr/local/bin/virtualenvwrapper.sh
+echo "WORKON_HOME=\$HOME/Envs" >> ~/.zshrc
+echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.zshrc
 
 # PHP
 # PHP 7.1
