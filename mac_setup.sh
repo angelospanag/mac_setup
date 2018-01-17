@@ -43,7 +43,7 @@ brew install youtube-dl
 brew install neofetch
 
 # Who am I?
-alias myip="curl ifconfig.me"
+echo "alias myip=\"curl ifconfig.me\"" >> ~/.zshrc
 
 # Git & Git config
 brew install git
