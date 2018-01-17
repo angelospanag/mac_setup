@@ -42,6 +42,9 @@ brew install youtube-dl
 # What a show-off
 brew install neofetch
 
+# Who am I?
+alias myip="curl ifconfig.me"
+
 # Git & Git config
 brew install git
 git config --global credential.helper osxkeychain
@@ -83,14 +86,6 @@ sudo pip install virtualenv
 sudo pip install virtualenvwrapper --ignore-installed six
 echo "WORKON_HOME=\$HOME/Envs" >> ~/.zshrc
 echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.zshrc
-
-# PHP
-# PHP 7.1
-brew install homebrew/php/php71
-echo "export PATH=\"\$(brew --prefix homebrew/php/php71)/bin:\$PATH\"" >> ~/.zshrc
-brew install homebrew/php/composer
-brew install homebrew/php/php-cs-fixer
-brew install homebrew/php/psysh
 
 # Node.js
 brew install node
