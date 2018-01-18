@@ -3,9 +3,6 @@
 # Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Cakebrew
-brew cask install cakebrew
-
 # OhMyZsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -75,6 +72,7 @@ cd $HOME
 mkdir go
 echo "export GOPATH=\$HOME/go" >> ~/.zshrc
 echo "export GOROOT=/usr/local/opt/go/libexec" >> ~/.zshrc
+source ~/.zshrc
 go get -u github.com/derekparker/delve/cmd/dlv
 go get -u golang.org/x/tools/cmd/goimports
 
@@ -91,6 +89,19 @@ echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.zshrc
 brew install node
 brew install yarn
 
+# Ruby
+brew install rbenv ruby-build
+
+# Add rbenv to bash so that it loads every time you open a terminal
+echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.zshrc
+source ~/.zshrc
+rbenv install 2.5.0
+rbenv global 2.5.0
+
+# Rails
+gem install rails -v 5.1.4
+rbenv rehash
+
 # AWS
 brew install awscli
 sudo curl -o /usr/local/bin/ecs-cli https://s3.amazonaws.com/amazon-ecs-cli/ecs-cli-darwin-amd64-latest
@@ -103,11 +114,18 @@ brew install homebrew/apache/ab
 brew cask install atom
 brew cask install fonts/font-fira-code
 brew cask install google-chrome
+brew cask install gpgtools
 brew cask install iterm2
+brew cask install java
 brew cask install keepassx
 brew cask install postman
 brew cask install spectacle
+brew cask install vlc
 brew cask install wire
+
+# Gaming
+brew cask install gog-galaxy
+brew cask install steam
 
 # Docker and Kitematic
 brew cask install docker
@@ -115,16 +133,17 @@ brew cask install kitematic
 
 # Visual Studio Code and extensions
 brew cask install visual-studio-code
+code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension PeterJausovec.vscode-docker
 code --install-extension bungcip.better-toml
+code --install-extension dbaeumer.vscode-eslint
 code --install-extension eg2.vscode-npm-script
-code --install-extension emmanuelbeziat.vscode-great-icons
 code --install-extension lukehoban.Go
 code --install-extension ms-python.python
+code --install-extension robertohuertasm.vscode-icons
 code --install-extension stevejpurves.cucumber
 
 # Visual Studio Code user settings
-rm $HOME/Library/Application\ Support/Code/User/settings.json
 echo "{" > $HOME/Library/Application\ Support/Code/User/settings.json
 echo "  \"workbench.iconTheme\": \"vscode-icons\"," >> $HOME/Library/Application\ Support/Code/User/settings.json
 echo "  \"editor.fontFamily\": \"Fira Code\"," >> $HOME/Library/Application\ Support/Code/User/settings.json
