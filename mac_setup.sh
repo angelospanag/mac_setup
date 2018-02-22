@@ -51,6 +51,7 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 git config --global commit.gpgsign true
 
 # Vim & Vim config
+brew install vim --with-override-system-vi
 echo "syntax on" >> ~/.vimrc
 echo "set nu" >> ~/.vimrc
 echo "colorscheme elflord" >> ~/.vimrc
@@ -76,12 +77,10 @@ go get -u github.com/derekparker/delve/cmd/dlv
 go get -u golang.org/x/tools/cmd/goimports
 
 # Python
-sudo easy_install pip
-sudo pip install virtualenv
-sudo pip install virtualenvwrapper --ignore-installed six
-echo "WORKON_HOME=\$HOME/Envs" >> ~/.zshrc
-echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.zshrc
+brew install python2
 brew cask install anaconda
+echo "export PATH=$HOME/.local/bin:\"\$PATH\""
+echo "export PATH=/usr/local/anaconda3/bin:\"\$PATH\""
 
 # Node.js
 brew install node
