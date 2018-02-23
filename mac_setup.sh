@@ -78,9 +78,11 @@ go get -u golang.org/x/tools/cmd/goimports
 
 # Python
 brew install python2
-brew cask install anaconda
-echo "export PATH=$HOME/.local/bin:\"\$PATH\""
-echo "export PATH=/usr/local/anaconda3/bin:\"\$PATH\""
+brew install python3
+# Add user base binary directory to PATH
+echo "export PATH=$HOME/Library/Python/3.6/bin:\"\$PATH\""
+source ~/.zshrc
+pip3 install pipenv --user 
 
 # Node.js
 brew install node
