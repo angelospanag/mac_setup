@@ -65,15 +65,20 @@ echo "fortune | cowsay -f dragon | lolcat" >> ~/.zshrc
 brew install sl
 
 # Go
-brew install go
-brew install dep
-brew install glide
-cd $HOME
-mkdir go
-echo "export GOPATH=\$HOME/go" >> ~/.zshrc
+# Install Go and dep
+brew install go dep
+# Create default Go directory and its 'bin', 'src' subfolders
+mkdir -p ~/go/bin
+mkdir -p ~/go/src
+# Set Go variables to Zsh
+echo "export GOPATH=~/go" >> ~/.zshrc
+echo "export GOBIN=~/go/bin" >> ~/.zshrc
 echo "export GOROOT=/usr/local/opt/go/libexec" >> ~/.zshrc
-source ~/.zshrc
+echo "export PATH=\$GOBIN:\"\$PATH\"" >> ~/.zshrc
+source  ~/.zshrc
+#Install Go debugger
 go get -u github.com/derekparker/delve/cmd/dlv
+# Install Go imports
 go get -u golang.org/x/tools/cmd/goimports
 
 # Python
