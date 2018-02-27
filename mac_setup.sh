@@ -84,10 +84,7 @@ go get -u golang.org/x/tools/cmd/goimports
 # Python
 brew install python2
 brew install python3
-# Add user base binary directory to PATH
-echo "export PATH=$HOME/Library/Python/3.6/bin:\"\$PATH\""
-source ~/.zshrc
-pip3 install pipenv --user 
+brew install pipenv
 
 # Node.js
 brew install node
@@ -140,10 +137,16 @@ brew cask install visual-studio-code
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension PeterJausovec.vscode-docker
 code --install-extension bungcip.better-toml
+code --install-extension codezombiech.gitignore
+code --install-extension cstrap.flask-snippets
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension eg2.vscode-npm-script
 code --install-extension lukehoban.Go
+code --install-extension mikestead.dotenv
 code --install-extension ms-python.python
+code --install-extension naereen.makefiles-support-for-vscode
+code --install-extension njpwerner.autodocstring
+code --install-extension rebornix.Ruby
 code --install-extension robertohuertasm.vscode-icons
 code --install-extension stevejpurves.cucumber
 
