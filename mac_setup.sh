@@ -76,10 +76,12 @@ echo "export GOBIN=~/go/bin" >> ~/.zshrc
 echo "export GOROOT=/usr/local/opt/go/libexec" >> ~/.zshrc
 echo "export PATH=\$GOBIN:\"\$PATH\"" >> ~/.zshrc
 source  ~/.zshrc
-#Install Go debugger
-go get -u github.com/derekparker/delve/cmd/dlv
 # Install Go imports
-go get -u golang.org/x/tools/cmd/goimports
+go get -u -v golang.org/x/tools/cmd/goimports
+# Install Go linter
+go get -u -v golang.org/x/lint/golint
+# Install Go debugger
+go get -u -v github.com/derekparker/delve/cmd/dlv
 
 # Python
 brew install python2
