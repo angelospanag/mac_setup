@@ -114,9 +114,8 @@ sudo chmod +x /usr/local/bin/ecs-cli
 brew install homebrew/apache/ab
 
 # Brew cask apps
-brew cask install atom
+brew cask install firefox
 brew cask install fonts/font-fira-code
-brew cask install google-chrome
 brew cask install gpgtools
 brew cask install iterm2
 brew cask install java
@@ -137,9 +136,11 @@ brew cask install kitematic
 # Visual Studio Code and extensions
 brew cask install visual-studio-code
 code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension GrapeCity.gc-excelviewer
 code --install-extension PeterJausovec.vscode-docker
 code --install-extension bungcip.better-toml
 code --install-extension codezombiech.gitignore
+code --install-extension coolbear.systemd-unit-file
 code --install-extension cstrap.flask-snippets
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension eg2.vscode-npm-script
@@ -148,7 +149,6 @@ code --install-extension mikestead.dotenv
 code --install-extension ms-python.python
 code --install-extension naereen.makefiles-support-for-vscode
 code --install-extension njpwerner.autodocstring
-code --install-extension rebornix.Ruby
 code --install-extension robertohuertasm.vscode-icons
 code --install-extension stevejpurves.cucumber
 
@@ -159,7 +159,8 @@ echo "  \"editor.fontFamily\": \"Fira Code\"," >> $HOME/Library/Application\ Sup
 echo "  \"editor.fontSize\": 14," >> $HOME/Library/Application\ Support/Code/User/settings.json
 echo "  \"editor.fontLigatures\": true," >> $HOME/Library/Application\ Support/Code/User/settings.json
 echo "  \"editor.formatOnSave\": true," >> $HOME/Library/Application\ Support/Code/User/settings.json
-echo "  \"go.formatTool\": \"goimports\"," >> $HOME/Library/Application\ Support/Code/User/settings.json
 echo "  \"terminal.integrated.fontSize\": 14," >> $HOME/Library/Application\ Support/Code/User/settings.json
-echo "  \"terminal.integrated.fontFamily\": \"Menlo, Monaco, \'Courier New\', monospace\"" >> $HOME/Library/Application\ Support/Code/User/settings.json
+echo "  \"terminal.integrated.fontFamily\": \"Menlo, Monaco, \'Courier New\', monospace\"," >> $HOME/Library/Application\ Support/Code/User/settings.json
+echo "  \"telemetry.enableTelemetry\": false," >> $HOME/Library/Application\ Support/Code/User/settings.json
+echo "  \"telemetry.enableCrashReporter\": false" >> $HOME/Library/Application\ Support/Code/User/settings.json
 echo "}" >> $HOME/Library/Application\ Support/Code/User/settings.json
