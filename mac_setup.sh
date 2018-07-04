@@ -87,6 +87,8 @@ go get -u -v github.com/derekparker/delve/cmd/dlv
 brew install python2
 brew install python3
 brew install pipenv
+brew install pyenv
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshenv
 
 # Node.js
 brew install node
