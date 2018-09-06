@@ -90,22 +90,16 @@ brew install pipenv
 brew install pyenv
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshenv
 
+# Python 3.7 user base directory
+echo "PYTHON_USER_BASE=\"\$HOME/Library/Python/3.7/bin\"" >> ~/.zshenv
+echo "export PATH=\$PYTHON_USER_BASE:\$PATH" >> ~/.zshenv
+
+# Install linting tools
+pip3 install flake8 pep8-naming --user
+
 # Node.js
 brew install node
 brew install yarn
-
-# Ruby
-brew install rbenv ruby-build
-
-# Add rbenv to bash so that it loads every time you open a terminal
-echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.zshrc
-source ~/.zshrc
-rbenv install 2.5.0
-rbenv global 2.5.0
-
-# Rails
-gem install rails -v 5.1.4
-rbenv rehash
 
 # AWS
 brew install awscli
