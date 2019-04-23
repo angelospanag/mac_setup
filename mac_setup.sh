@@ -57,13 +57,6 @@ echo "set nu" >> ~/.vimrc
 echo "colorscheme elflord" >> ~/.vimrc
 echo "set backspace=indent,eol,start" >> ~/.vimrc
 
-# I have horrible humour
-brew install fortune
-brew install cowsay
-brew install lolcat
-echo "fortune | cowsay -f dragon | lolcat" >> ~/.zshrc
-brew install sl
-
 # Go
 # Install Go and dep
 brew install go dep
@@ -132,21 +125,19 @@ brew cask install kitematic
 # Visual Studio Code and extensions
 brew cask install visual-studio-code
 code --install-extension CoenraadS.bracket-pair-colorizer
-code --install-extension PeterJausovec.vscode-docker
 code --install-extension bungcip.better-toml
 code --install-extension codezombiech.gitignore
-code --install-extension coolbear.systemd-unit-file
-code --install-extension cstrap.flask-snippets
+code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension dbaeumer.vscode-eslint
-code --install-extension eg2.vscode-npm-script
-code --install-extension lukehoban.Go
+code --install-extension GrapeCity.gc-excelviewer
+code --install-extension mechatroner.rainbow-csv
 code --install-extension mikestead.dotenv
 code --install-extension ms-python.python
+code --install-extension ms-vscode.Go
 code --install-extension naereen.makefiles-support-for-vscode
-code --install-extension njpwerner.autodocstring
-code --install-extension patrys.vscode-code-outline
-code --install-extension robertohuertasm.vscode-icons
-code --install-extension stevejpurves.cucumber
+code --install-extension oderwat.indent-rainbow
+code --install-extension PeterJausovec.vscode-docker
+code --install-extension vscode-icons-team.vscode-icons
 
 # Visual Studio Code user settings
 echo "{" > $HOME/Library/Application\ Support/Code/User/settings.json
