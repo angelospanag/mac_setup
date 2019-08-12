@@ -51,7 +51,7 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 git config --global commit.gpgsign true
 
 # Vim & Vim config
-brew install vim --with-override-system-vi
+brew install vim
 echo "syntax on" >> ~/.vimrc
 echo "set nu" >> ~/.vimrc
 echo "colorscheme elflord" >> ~/.vimrc
@@ -91,7 +91,7 @@ echo "export PATH=\$PYTHON_USER_BASE:\$PATH" >> ~/.zshenv
 pip3 install flake8 pep8-naming --user
 
 # Node.js
-brew install node
+brew install node@10
 brew install yarn
 
 # AWS
@@ -104,13 +104,12 @@ brew install homebrew/apache/ab
 
 # Brew cask apps
 brew cask install firefox
-brew cask install fonts/font-fira-code
+brew install homebrew/cask-fonts/font-fira-code
 brew cask install gpgtools
 brew cask install iterm2
 brew cask install java
 brew cask install keepassx
 brew cask install postman
-brew cask install spectacle
 brew cask install vlc
 brew cask install wire
 
