@@ -108,7 +108,7 @@ brew install homebrew/cask-fonts/font-fira-code
 brew cask install gpg-suite
 brew cask install iterm2
 brew cask install java
-brew cask install keepassx
+brew cask install keepassxc
 brew cask install postman
 brew cask install vlc
 brew cask install wire
