@@ -123,12 +123,11 @@ brew cask install kitematic
 
 # Visual Studio Code and extensions
 brew cask install visual-studio-code
-code --install-extension CoenraadS.bracket-pair-colorizer
+# Visual Studio Code extensions
 code --install-extension bungcip.better-toml
 code --install-extension codezombiech.gitignore
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension dbaeumer.vscode-eslint
-code --install-extension GrapeCity.gc-excelviewer
 code --install-extension mechatroner.rainbow-csv
 code --install-extension mikestead.dotenv
 code --install-extension ms-python.python
