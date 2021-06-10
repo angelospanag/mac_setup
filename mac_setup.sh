@@ -45,7 +45,7 @@ echo "alias myip=\"curl ifconfig.me\"" >> ~/.zshrc
 # Git & Git config
 brew install git
 git config --global credential.helper osxkeychain
-git config --global user.email "angelospanag@gmail.com"
+git config --global user.email "angelospanag@protonmail.com"
 git config --global user.name "Angelos Panagiotopoulos"
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 git config --global commit.gpgsign true
@@ -73,14 +73,14 @@ brew install pyenv
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshenv
 
 # Python 3.8 user base directory
-echo "PYTHON_USER_BASE=\"\$HOME/Library/Python/3.8/bin\"" >> ~/.zshenv
+echo "PYTHON_USER_BASE=\"\$HOME/Library/Python/3.9/bin\"" >> ~/.zshenv
 echo "export PATH=\$PYTHON_USER_BASE:\$PATH" >> ~/.zshenv
 
 # Install linting tools
 pip3 install flake8 pep8-naming autopep8 --user
 
 # Node.js
-brew install node@12
+brew install node@14
 
 # ApacheBench
 brew install homebrew/apache/ab
@@ -106,14 +106,16 @@ brew cask install kitematic
 # Visual Studio Code and extensions
 brew cask install visual-studio-code
 code --install-extension bungcip.better-toml
-code --install-extension codezombiech.gitignore
-code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension CoenraadS.bracket-pair-colorizer-2
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension hashicorp.terraform
+code --install-extension kdcro101.favorites
 code --install-extension mechatroner.rainbow-csv
 code --install-extension mikestead.dotenv
+code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-python.python
-code --install-extension ms-vscode.Go
-code --install-extension naereen.makefiles-support-for-vscode
+code --install-extension ms-python.vscode-pylance
+code --install-extension ms-toolsai.jupyter
+code --install-extension njpwerner.autodocstring
 code --install-extension oderwat.indent-rainbow
-code --install-extension PeterJausovec.vscode-docker
 code --install-extension vscode-icons-team.vscode-icons
