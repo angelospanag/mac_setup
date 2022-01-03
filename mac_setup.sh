@@ -46,7 +46,7 @@ echo "set backspace=indent,eol,start" >> ~/.vimrc
 # Python
 brew install python@3.9 poetry pyenv 
 echo "PYTHON_USER_BASE=\"\$HOME/Library/Python/3.9/bin\"" >> ~/.zshrc
-echo "export PATH=\$PYTHON_USER_BASE:\$PATH" >> ~/.zshrc
+echo "export PATH=\"\$PYTHON_USER_BASE:\$PATH" >> ~/.zshrc
 echo "export POETRY_VIRTUALENVS_IN_PROJECT=1" >> ~/.zshrc
 echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
