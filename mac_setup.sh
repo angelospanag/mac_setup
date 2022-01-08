@@ -60,7 +60,7 @@ brew install node@16
 brew install homebrew/apache/ab
 
 # Brew cask apps
-brew install --cask firefox iterm2 keepassxc postman signal vlc
+brew install --cask brave-browser firefox iterm2 keepassxc postman signal vlc
 
 # Gaming
 brew install --cask gog-galaxy steam
@@ -82,3 +82,14 @@ code --install-extension ms-toolsai.jupyter
 code --install-extension njpwerner.autodocstring
 code --install-extension oderwat.indent-rainbow
 code --install-extension PKief.material-icon-theme
+
+VS_CODE_SETTINGS="{\"workbench.colorTheme\": \"Default Dark+\",
+        \"workbench.iconTheme\": \"material-icon-theme\",
+        \"telemetry.telemetryLevel\": \"off\",
+        \"editor.fontSize\": 16,
+        \"python.formatting.provider\": \"black\",
+        \"python.linting.flake8Enabled\": true,
+        \"editor.bracketPairColorization.enabled\": true,
+        \"editor.formatOnSave\": true}"
+
+echo $VS_CODE_SETTINGS > ~/Library/Application Support/Code/User/settings.json
