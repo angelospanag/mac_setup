@@ -51,7 +51,10 @@ echo "export POETRY_VIRTUALENVS_IN_PROJECT=1" >> ~/.zshrc
 echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 source  ~/.zshrc
-pip3 install -U --user flake8 pep8-naming black 
+pip3 install -U --user flake8 pep8-naming black
+
+# Go
+brew install go
 
 # Node.js
 brew install node@16
@@ -72,6 +75,7 @@ brew install --cask docker
 brew install --cask visual-studio-code
 code --install-extension bungcip.better-toml
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension golang.go
 code --install-extension hashicorp.terraform
 code --install-extension mechatroner.rainbow-csv
 code --install-extension mikestead.dotenv
