@@ -44,20 +44,20 @@ echo "colorscheme elflord" >> ~/.vimrc
 echo "set backspace=indent,eol,start" >> ~/.vimrc
 
 # Python
-brew install python@3.9 poetry pyenv 
-echo "PYTHON_USER_BASE=\"\$HOME/Library/Python/3.9/bin\"" >> ~/.zshrc
-echo "export PATH=\"\$PYTHON_USER_BASE:\$PATH" >> ~/.zshrc
+brew install python@3.11 poetry pyenv 
+echo "export PATH=\"/usr/local/opt/python@3.11/libexec/bin:\$PATH\"" >> ~/.zshrc
+echo "export PATH=\"\$HOME/Library/Python/3.11/bin:\$PATH\"" >> ~/.zshrc
 echo "export POETRY_VIRTUALENVS_IN_PROJECT=1" >> ~/.zshrc
 echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 source  ~/.zshrc
-pip3 install -U --user flake8 pep8-naming black
+pip3 install -U --user flake8 flake8-bugbear pep8-naming black
 
 # Go
 brew install go
 
 # Node.js
-brew install node@16
+brew install node@18
 
 # ApacheBench
 brew install homebrew/apache/ab
