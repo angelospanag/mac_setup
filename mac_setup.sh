@@ -51,7 +51,7 @@ echo "export POETRY_VIRTUALENVS_IN_PROJECT=1" >> ~/.zshrc
 echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 source  ~/.zshrc
-pip3 install -U --user flake8 flake8-bugbear pep8-naming black
+pip3 install -U --user flake8 flake8-bugbear pep8-naming black ipython
 
 # Go
 brew install go
