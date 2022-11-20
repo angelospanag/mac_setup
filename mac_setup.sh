@@ -73,6 +73,8 @@ brew install --cask docker
 
 # Visual Studio Code and extensions
 brew install --cask visual-studio-code
+code --install-extension bradlc.vscode-tailwindcss
+code --install-extension esbenp.prettier-vscode
 code --install-extension golang.go
 code --install-extension hashicorp.terraform
 code --install-extension mechatroner.rainbow-csv
