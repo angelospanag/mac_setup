@@ -75,11 +75,11 @@ brew install --cask docker
 brew install --cask visual-studio-code
 code --install-extension bradlc.vscode-tailwindcss
 code --install-extension charliermarsh.ruff
+code --install-extension dotenv.dotenv-vscode
 code --install-extension esbenp.prettier-vscode
 code --install-extension golang.go
 code --install-extension hashicorp.terraform
 code --install-extension mechatroner.rainbow-csv
-code --install-extension mikestead.dotenv
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-python.black-formatter
 code --install-extension ms-python.isort
