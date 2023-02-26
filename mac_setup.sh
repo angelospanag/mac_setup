@@ -14,7 +14,7 @@ touch ~/.hushlogin
 # Generate new SSH keys
 eval "$(ssh-agent -s)"
 cd ~/ && mkdir .ssh
-ssh-keygen -f ~/.ssh/id_rsa -t rsa -b 4096 -C "angelospanag@protonmail.com" -N ''
+ssh-keygen -t ed25519 -C "angelospanag@protonmail.com" -N ''
 
 # SSH config
 touch ~/.ssh/config
@@ -56,14 +56,14 @@ pip3 install -U --user ruff black ipython
 # Go
 brew install go
 
+# Java
+brew install --cask temurin
+
 # Node.js
 brew install node@18
 
-# ApacheBench
-brew install homebrew/apache/ab
-
 # Brew cask apps
-brew install --cask brave-browser firefox iterm2 keepassxc postman signal vlc
+brew install --cask brave-browser iterm2 keepassxc postman signal vlc
 
 # Gaming
 brew install --cask gog-galaxy steam
