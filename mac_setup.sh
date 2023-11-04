@@ -44,14 +44,10 @@ echo "colorscheme elflord" >> ~/.vimrc
 echo "set backspace=indent,eol,start" >> ~/.vimrc
 
 # Python
-brew install python@3.11 poetry pyenv 
-echo "export PATH=\"/usr/local/opt/python@3.11/libexec/bin:\$PATH\"" >> ~/.zshrc
-echo "export PATH=\"\$HOME/Library/Python/3.11/bin:\$PATH\"" >> ~/.zshrc
+brew install python@3.12 poetry ruff ipython
+echo "export PATH=\"/usr/local/opt/python@3.12/libexec/bin:\$PATH\"" >> ~/.zshrc
 echo "export POETRY_VIRTUALENVS_IN_PROJECT=1" >> ~/.zshrc
-echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 source  ~/.zshrc
-pip3 install -U --user ruff black ipython
 
 # Go
 brew install go
@@ -60,10 +56,10 @@ brew install go
 brew install --cask temurin
 
 # Node.js
-brew install node@18
+brew install node@20
 
 # Brew cask apps
-brew install --cask brave-browser iterm2 keepassxc postman signal vlc
+brew install --cask iterm2 keepassxc signal vlc
 
 # Gaming
 brew install --cask gog-galaxy steam
@@ -72,37 +68,24 @@ brew install --cask gog-galaxy steam
 brew install --cask docker
 
 # Visual Studio Code and extensions
+
 brew install --cask visual-studio-code
-code --install-extension bradlc.vscode-tailwindcss
 code --install-extension charliermarsh.ruff
-code --install-extension dotenv.dotenv-vscode
+code --install-extension dbaeumer.vscode-eslint
 code --install-extension esbenp.prettier-vscode
 code --install-extension golang.go
-code --install-extension hashicorp.terraform
-code --install-extension mechatroner.rainbow-csv
 code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-python.black-formatter
-code --install-extension ms-python.isort
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
-code --install-extension ms-toolsai.jupyter
-code --install-extension ms-toolsai.jupyter-keymap
-code --install-extension ms-toolsai.jupyter-renderers
-code --install-extension ms-toolsai.vscode-jupyter-cell-tags
-code --install-extension ms-toolsai.vscode-jupyter-slideshow
-code --install-extension njpwerner.autodocstring
-code --install-extension oderwat.indent-rainbow
-code --install-extension PKief.material-icon-theme
-code --install-extension rust-lang.rust-analyzer
+code --install-extension pflannery.vscode-versionlens
 code --install-extension tamasfe.even-better-toml
+code --install-extension unifiedjs.vscode-mdx
 code --install-extension yzhang.markdown-all-in-one
 
 VS_CODE_SETTINGS="{\"workbench.colorTheme\": \"Default Dark+\",
         \"workbench.iconTheme\": \"material-icon-theme\",
         \"telemetry.telemetryLevel\": \"off\",
         \"editor.fontSize\": 16,
-        \"python.formatting.provider\": \"black\",
-        \"python.linting.flake8Enabled\": true,
         \"editor.bracketPairColorization.enabled\": true,
         \"editor.formatOnSave\": true}"
 
