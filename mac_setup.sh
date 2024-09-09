@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # Brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -16,6 +14,9 @@ ssh-keygen -t ed25519 -C "angelospanag@protonmail.com"
 
 # Who am I?
 echo "alias myip=\"curl ifconfig.me\"" >> ~/.zshrc
+
+# List preferred wireless networks
+echo "alias list-preferred-wireless-networks=\"networksetup -listpreferredwirelessnetworks en0\"" >> ~/.zshrc
 
 # Git & Git config
 git config --global user.email "angelospanag@protonmail.com"
@@ -35,17 +36,14 @@ source  ~/.zshrc
 # Go
 brew install go
 
-# Java
-brew install --cask temurin
-
 # Node.js
 brew install node@20
 
 # Brew cask apps
-brew install --cask iterm2 keepassxc signal vlc
+brew install --cask firefox iterm2 keepassxc krita pycharm signal vlc
 
 # Gaming
-brew install --cask gog-galaxy steam
+brew install --cask gog-galaxy steam whisky
 
 # Docker
 brew install --cask docker
