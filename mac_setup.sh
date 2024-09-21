@@ -40,7 +40,7 @@ brew install go
 brew install node@20
 
 # Brew cask apps
-brew install --cask firefox iterm2 keepassxc krita pycharm signal vlc
+brew install --cask firefox iterm2 keepassxc krita ollama pycharm signal vlc
 
 # Gaming
 brew install --cask gog-galaxy steam whisky
