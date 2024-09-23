@@ -37,7 +37,7 @@ source  ~/.zshrc
 brew install go
 
 # Node.js
-brew install node@20
+brew install node@20 pnpm
 
 # Brew cask apps
 brew install --cask firefox iterm2 keepassxc krita ollama pycharm signal vlc
