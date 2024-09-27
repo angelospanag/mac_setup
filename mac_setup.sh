@@ -29,7 +29,7 @@ echo "colorscheme elflord" >> ~/.vimrc
 echo "set backspace=indent,eol,start" >> ~/.vimrc
 
 # Python
-brew install python@3.12 ruff uvx
+brew install python@3.12 ipython ruff uvx
 echo "export PATH=\"/usr/local/opt/python@3.12/libexec/bin:\$PATH\"" >> ~/.zshrc
 source  ~/.zshrc
 
