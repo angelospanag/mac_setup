@@ -29,15 +29,15 @@ echo "colorscheme elflord" >> ~/.vimrc
 echo "set backspace=indent,eol,start" >> ~/.vimrc
 
 # Python
-brew install python@3.12 ipython ruff uvx
-echo "export PATH=\"/usr/local/opt/python@3.12/libexec/bin:\$PATH\"" >> ~/.zshrc
+brew install python@3.13 ipython ruff uvx
+echo "export PATH=\"/usr/local/opt/python@3.13/libexec/bin:\$PATH\"" >> ~/.zshrc
 source  ~/.zshrc
 
 # Go
 brew install go
 
 # Node.js
-brew install node@20 pnpm
+brew install node@22 pnpm
 
 # Brew cask apps
 brew install --cask firefox iterm2 keepassxc krita ollama pycharm signal vlc
