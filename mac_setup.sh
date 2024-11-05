@@ -1,7 +1,7 @@
 # Brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew install btop ffmpeg git jq nmap pwgen tree vim wget   
+brew install btop cloc ffmpeg git jq nmap pwgen tree vim wget   
 
 # OhMyZsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
