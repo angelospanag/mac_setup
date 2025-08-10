@@ -40,7 +40,7 @@ brew install --cask goland iterm2 keepassxc ollama pycharm signal vlc
 brew install --cask gog-galaxy steam
 
 # Docker
-brew install --cask docker
+brew install --cask docker-desktop
 
 # Visual Studio Code and extensions
 brew install --cask visual-studio-code
