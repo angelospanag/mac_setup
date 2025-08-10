@@ -3,14 +3,20 @@
 
 brew install btop cloc fd ffmpeg git jq lazygit neovim nmap pwgen starship ripgrep tree wget   
 
+# Lazyvim
+# https://www.lazyvim.org
+mv ~/.config/nvim{,.bak}
+mv ~/.local/share/nvim{,.bak}
+mv ~/.local/state/nvim{,.bak}
+mv ~/.cache/nvim{,.bak}
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+
 # Remove annoying console login message
 touch ~/.hushlogin
 
 # Generate new SSH keys
 ssh-keygen -t ed25519 -C "angelospanag@protonmail.com"
-
-# Who am I?
-echo "alias myip=\"curl ifconfig.me\"" >> ~/.zshrc
 
 # Git & Git config
 git config --global user.email "angelospanag@protonmail.com"
