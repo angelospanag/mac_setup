@@ -24,8 +24,6 @@ git config --global user.name "Angelos Panagiotopoulos"
 
 # Python
 brew install python@3.13 ipython ruff uv
-echo "export PATH=\"/usr/local/opt/python@3.13/libexec/bin:\$PATH\"" >> ~/.zshrc
-source  ~/.zshrc
 
 # Go
 brew install go golangci-lint
