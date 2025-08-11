@@ -32,7 +32,7 @@ brew install go golangci-lint
 brew install node@22 pnpm
 
 # Brew cask apps
-brew install --cask goland iterm2 keepassxc ollama pycharm signal vlc
+brew install --cask ghostty goland keepassxc ollama pycharm signal vlc
 
 # Gaming
 brew install --cask gog-galaxy steam
