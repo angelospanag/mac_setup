@@ -1,7 +1,7 @@
 # Brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew install btop cloc fd ffmpeg git jq lazygit neovim nmap pwgen ripgrep starship tree wget   
+brew install btop cloc fd ffmpeg fzf git jq lazygit neovim nmap pwgen ripgrep starship tree wget   
 
 # Lazyvim
 # https://www.lazyvim.org
